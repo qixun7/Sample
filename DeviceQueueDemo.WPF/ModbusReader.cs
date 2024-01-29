@@ -17,6 +17,7 @@ namespace DeviceQueueDemo.WPF
             _master = modbusMaster;
         }
 
+            //读取
         public ushort[] ReadModbusData(int slaveId, int address, int numberOfPoints)
         {
             if (address >= 1 && address <= 9999)
